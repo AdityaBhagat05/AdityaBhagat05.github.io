@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Miniport by HTML5 UP</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    :root {
+      --color-dark: #555879;
+      --color-mid: #98A1BC;
+      --color-light: #DED3C4;
+      --color-accent: #98A1BC;
+      --color-bg: #F4EBD3;
+    }
+
+    body {
+      background-color: var(--color-bg);
+    }
+
+    article#work,
+    article#portfolio,
+    article#internship,
+    article#education,
+    article#contact {
+      background-color: var(--color-bg);
+    }
+
+    a.button {
+      background: var(--color-accent) !important;
+      color: #fff !important;
+    }
+
+    article#work .row,
+    article#portfolio .row,
+    article#internship .row,
+    article#education .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    article#work .row > div,
+    article#portfolio .row > div,
+    article#internship .row > div,
+    article#education .row > div {
+      flex: 1 1 calc(33.333% - 2rem);
+      max-width: calc(33.333% - 2rem);
+      display: flex;
+    }
+
+    article#work .box,
+    article#portfolio .box,
+    article#internship .box,
+    article#education .box {
+      background: var(--color-light);
+      border: 2px solid var(--color-dark);
+      color: var(--color-dark);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      min-height: 240px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    article#work .box > .icon,
+    article#work .box > h3,
+    article#portfolio .box > .icon,
+    article#portfolio .box > h3,
+    article#internship .box > .icon,
+    article#internship .box > h3,
+    article#education .box > .icon,
+    article#education .box > h3 {
+      flex: 0 0 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    article#work .box > p,
+    article#work .box > ul,
+    article#portfolio .box > p,
+    article#portfolio .box > ul,
+    article#internship .box > p,
+    article#internship .box > ul,
+    article#education .box > p,
+    article#education .box > ul {
+      flex: 1;
+      margin-top: 1rem;
+    }
+
+    article#top {
+      background-color: var(--color-dark);
+    }
+
+    article#top h1,
+    article#top p {
+      color: #fff;
+    }
+
+    article#top .button {
+      background: var(--color-accent);
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <nav id="nav">
+    <ul class="container">
+      <li><a href="#top">Top</a></li>
+      <li><a href="#work">Skills</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#internship">Internships</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <article id="top" class="wrapper style1">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-5-large col-12-medium">
+          <span class="image fit">
+            <img src="profpic.jpg" alt="" style="width: 350px; height: 350px; object-fit: cover; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+          </span>
+        </div>
+        <div class="col-8 col-7-large col-12-medium">
+          <header>
+            <h1>Hi. I'm <strong>Aditya Bhagat</strong>.</h1>
+          </header>
+          <p>Im a 3rd Year Btech student studying Computer Science(Iot) in VIT Vellore interested in AI/ML and WebDev.</p>
+          <a href="#work" class="button large scrolly">Learn about me</a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="work" class="wrapper style2">
+    <div class="container">
+      <header>
+        <h2>Skills</h2>
+        <p>Innovating software engineering with the power of AI/ML.</p>
+      </header>
+      <div class="row aln-center">
+        <div class="col-4 col-6-medium col-12-small">
+          <section class="box style1">
+            <span class="icon solid featured fa-brain"></span>
+            <h3>AI/ML & LLM Tools</h3>
+            <p>TensorFlow, PyTorch, Scikit-Learn, spaCy, OpenCV, Keras, Google ADK, LangChain</p>
+          </section>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <section class="box style1">
+            <span class="icon solid featured fa-code"></span>
+            <h3>Programming Languages</h3>
+            <p>Python, C, C++, Java, JavaScript</p>
+          </section>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <section class="box style1">
+            <span class="icon solid featured fa-globe"></span>
+            <h3>Web Development</h3>
+            <p>HTML, CSS, MERN Stack (MongoDB, Express, React, Node.js)</p>
+          </section>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <section class="box style1">
+            <span class="icon solid featured fa-database"></span>
+            <h3>Databases & Tools</h3>
+            <p>MySQL, MongoDB, Git, GitHub, Postman, VS Code</p>
+          </section>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <section class="box style1">
+            <span class="icon solid featured fa-cogs"></span>
+            <h3>Other Technologies</h3>
+            <p>REST APIs, JSON, Agile Workflow, Linux, Jupyter Notebook</p>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <p>Want to see how I apply these skills in real-world projects?</p>
+        <a href="#portfolio" class="button large scrolly">View my projects</a>
+      </footer>
+    </div>
+  </article>
+
+  <article id="portfolio" class="wrapper style3">
+    <div class="container">
+      <header>
+        <h2>Projects I've Built</h2>
+        <p>Combining AI innovation with full-stack engineering to solve real problems.</p>
+      </header>
+      <div class="row">
+        <div class="col-4 col-6-medium col-12-small">
+          <article class="box style2">
+            <h3>Lung Cancer Detection using Vision Mamba</h3>
+            <p>Built a GPU-accelerated deep learning model using Vision Mamba, achieving 94% accuracy on CT scan datasets.</p>
+          </article>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <article class="box style2">
+            <h3>AI-Generated Image Detection model</h3>
+            <p>Used CNNs and transfer learning to classify AI-generated images with 96% accuracy.</p>
+            <p>Built using a fusion of multiple datasets to enhance performance across varied scenarios.</p>
+          </article>
+        </div>
+      </div>
+      <footer>
+        <p>Want to learn about my professional experience?</p>
+        <a href="#internship" class="button large scrolly">View Internship</a>
+      </footer>
+    </div>
+  </article>
+
+  <article id="internship" class="wrapper style2">
+    <div class="container">
+      <header>
+        <h2>Internship Experience</h2>
+        <p>Industry-level exposure applying Generative AI to solve real-world challenges.</p>
+      </header>
+      <div class="row aln-center">
+        <div class="col-6 col-12-medium">
+          <section class="box style1">
+            <span class="icon solid featured fa-building"></span>
+            <h3>GenAI Intern @ HPCL</h3>
+            <p><strong>May 2025 – July 2025</strong></p>
+            <ul>
+              <li>Developed a RAG-based AI agent using Google ADK for document query automation.</li>
+              <li>Created a custom React dashboard for chatbot control and insights.</li>
+              <li>Integrated sentence transformers for accurate semantic search and embedding analysis.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <p>Interested in collaborating or hiring me?</p>
+        <a href="#contact" class="button large scrolly">Get in touch</a>
+      </footer>
+    </div>
+  </article>
+
+  <article id="education" class="wrapper style3">
+    <div class="container">
+      <header>
+        <h2>Education & Certifications</h2>
+        <p>Strong academic groundwork paired with top AI/ML credentials.</p>
+      </header>
+      <div class="row">
+        <div class="col-6 col-12-medium">
+          <article class="box style2">
+            <h3>VIT University, Vellore</h3>
+            <p><strong>B.Tech CSE (IoT)</strong> – CGPA: 8.77 (Expected 2027)</p>
+            <ul>
+              <li>Class XII (FIITJEE Saifabad): 88%</li>
+              <li>Class X (CBSE JHPS): 93%</li>
+            </ul>
+          </article>
+        </div>
+        <div class="col-6 col-12-medium">
+          <article class="box style2">
+            <h3>Certifications</h3>
+            <ul>
+              <li>Machine Learning Specialization (DeepLearning.AI, Coursera)</li>
+              <li>Oracle Generative AI Professional</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <footer>
+        <p>Want to see my hands‑on work?</p>
+        <a href="#portfolio" class="button large scrolly">Back to Projects</a>
+      </footer>
+    </div>
+  </article>
+
+  <article id="contact" class="wrapper style2">
+    <div class="container">
+      <header>
+        <h2>Get in Touch</h2>
+        <p>Let’s connect & collaborate.</p>
+      </header>
+      <div class="row">
+        <div class="col-6 col-12-medium">
+          <article class="box style2">
+            <h3>Contact Info</h3>
+            <ul class="icons">
+              <li><span class="icon solid fa-phone"></span> +91 83569 59929</li>
+              <li><span class="icon solid fa-envelope"></span> bhagataditya2506@gmail.com</li>
+            </ul>
+          </article>
+        </div>
+        <div class="col-6 col-12-medium">
+          <article class="box style2">
+            <h3>Find Me Online</h3>
+            <ul class="social">
+              <li><a href="https://github.com/AdityaBhagat05" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+              <li><a href="https://www.linkedin.com/in/aditya-bhagat-6b1847287" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+              <li><a href="https://leetcode.com/AdityaBhagat123" class="icon solid fa-code"><span class="label">LeetCode</span></a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <footer>
+        <ul id="copyright">
+          <li>&copy; 2025 Aditya Bhagat. All rights reserved.</li>
+        </ul>
+      </footer>
+    </div>
+  </article>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
